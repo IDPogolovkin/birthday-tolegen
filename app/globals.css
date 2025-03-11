@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+@import url(/public/cirpnova-d.ttf);
+@import url(/public/WonderGardenScript-Regular.ttf);
+@import url(/public/WonderGardenScript-Regular.woff);
+@import url(/public/WonderGardenScript-Regular.woff2);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color:  black;
+  background-image: url('/mramor.jpg');
+}
+
+@layer utilities {
+
+.clip-diagonal-reverse {
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+}
