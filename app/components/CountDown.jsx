@@ -42,7 +42,7 @@ function CountDown() {
 
 
     return (
-        <motion.div whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 100 }} exit={{ opacity: 0 }} transition={{ duration: 1 }} className="grid grid-cols-5 sm:text-lg font-['wg'] bg-[rgba(0,0,0,0.5)] p-3 rounded-lg absolute bottom-20 text-white">
+        <motion.div whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 100 }} exit={{ opacity: 0 }} transition={{ duration: 1 }} className="grid grid-cols-5 sm:text-lg font-['wg'] bg-[rgba(0,0,0,0.5)] p-3 rounded-lg mb-16 mr-auto ml-auto w-[90%] text-white">
             <div className="col-span-1 text-center text-2xl">
                 {weeks}
             </div>
@@ -67,7 +67,7 @@ function CountDown() {
             <div className="col-span-1 text-center">
                 {hours === 1 ? 'Сағат' : 'Сағат'}
             </div>
-            <div className="col-span-1 text-center">
+            <div className="col-span-1 text-center mr-2">
                 {minutes === 1 ? 'Минута' : 'Минут'}
             </div>
             <div className="col-span-1 text-center">
