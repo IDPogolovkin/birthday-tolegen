@@ -44,9 +44,9 @@ export default function Home() {
           <p className={`${wg.className} text-3xl`}>70 жас мерей тойы <br />10.05.2025</p>
         </motion.div>
       </div>
-        <div className=' absolute top-72 font-bold  w-[88%] max-w-[370px] justify-between text-black h-[100%] mt-10'>
+        <div className=' font-bold  w-[88%] max-w-[370px] justify-between text-black h-[100%] mt-2'>
           <audio src="./music.mp3" autoPlay loop id='audio'></audio>
-          <motion.div whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 100 }} exit={{ opacity: 0, y: -100 }} transition={{ duration: 1 }}   className=' absolute top-0 right-[6%] z-15 mt-2'>
+          <motion.div whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 100 }} exit={{ opacity: 0, y: -100 }} transition={{ duration: 1 }}   className=' absolute bottom-48 right-[13%] z-15 mt-2'>
             <div className='flex justify-center items-center mb-16'>
               { play ? 
               <button onClick={playMusic} className={`rounded-full bg-white/70 hover:bg-white/90 ${play && 'animate-[spin_3s_linear_infinite]'}`}>
@@ -77,7 +77,7 @@ export default function Home() {
       </div>
     </main>
 
-    <motion.div whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 100 }} exit={{ opacity: 0, y: -100 }} transition={{ duration: 1 }}   className=' flex flex-col w-[80%] mx-auto p-4 rounded-lg relative overflow-hidden right-0 justify-center items-center text-lg mt-32'>
+    <motion.div whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 100 }} exit={{ opacity: 0, y: -100 }} transition={{ duration: 1 }}   className=' flex flex-col w-[80%] mx-auto p-4 rounded-lg relative overflow-hidden right-0 justify-center items-center text-lg mt-4'>
       <p className=' text-3xl font-extrabold'>Aisara Hall</p>
       <p className=' text-2xl font-extrabold'>Банкет залы</p>
       <img src="/aisara.png" alt="aisara" />
