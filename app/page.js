@@ -67,7 +67,7 @@ export default function Home() {
           <motion.div whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 100 }} exit={{ opacity: 0, y: -100 }} transition={{ duration: 1 }} className='mb-4 text-center  p-3 rounded-lg text-2xl bg-[rgba(0,0,0,0.5)]'>
               <h1 className='text-4xl text-[#c1af3b] w-auto mb-2'>Құрметті</h1>
               <i> <p className=' text-lg text-[#fff]'>Ағайын-туыс, құда-жекжат, нағашы-жиен, бөлелер, дос-жаран, көршілер! 
-                                          Сіздерді, асқар таудай әкеміз Төлеген Аманкенұлы
+                                          Сіздерді, Асқар таудай әкеміз Төлеген Аманкенұлы
               </p></i>
             </motion.div>
             <motion.div whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 100 }} exit={{ opacity: 0, y: -100 }} transition={{ duration: 1 }} className=' mt-2 text-center  p-3 rounded-lg text-2xl bg-[rgba(0,0,0,0.5)]'>
