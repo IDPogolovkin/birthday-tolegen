@@ -1,7 +1,7 @@
 'use client'
 import dynamic from 'next/dynamic';
 import { YMaps, Map, Button, Placemark } from '@pbe/react-yandex-maps';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import localFont from 'next/font/local';
 import { motion } from 'framer-motion'
 
@@ -22,6 +22,17 @@ const CountDown = dynamic(() => import('./components/CountDown'), {
 export default function Home() {
 
   const [play, setPlay] = useState(true)
+
+  useEffect(() => {
+    const audio = document.getElementById('audio');
+    if (audio) {
+      // Ensure volume is set
+      // audio.volume = 1;
+      audio.play().catch(() => {
+        console.log('Autoplay prevented, waiting for user interaction.');
+      });
+    }
+  }, []);
 
   const playMusic = () => {
     setPlay(!play);
