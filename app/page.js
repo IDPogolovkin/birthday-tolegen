@@ -36,8 +36,8 @@ export default function Home() {
   <div className='font-[wg] text-center'>
     <main className='flex flex-col items-center justify-between relative '>
       <img src='/super-hero.jpeg' alt='Hero' className='w-full'/>
-      <img src='/oyu2.png' alt='stars' className=' absolute h-52 mt-2 ml-40 p-0 rotate-[-90deg] clip-diagonal-reverse'/>
-      <img src='/oyu2.png' alt='stars' className=' absolute bottom-72 w-40 h-40 mr-52 p-0 rotate-[90deg] clip-diagonal-reverse'/>
+      <img src='/oyu2.png' alt='stars' className=' absolute h-52 mt-2 ml-44 p-0 rotate-[-90deg] clip-diagonal-reverse'/>
+      <img src='/oyu2.png' alt='stars' className=' absolute bottom-64 w-36 h-[10rem] mr-56 p-0 rotate-[90deg] clip-diagonal-reverse'/>
       <div className=' absolute top-0 left-8 w-[80%] text-white'>
         <motion.div whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 100 }} exit={{ opacity: 0, y: -100 }} transition={{ duration: 1 }}  className='text-left relative'>
           <p className={`${wg.className} text-4xl mt-6 m-0 font-extrabold`}>Толеген</p>
