@@ -25,14 +25,23 @@ export default function Home() {
 
   useEffect(() => {
     const audio = document.getElementById('audio');
-    if (audio) {
-      // Ensure volume is set
-      audio.volume = 1;
-      audio.play().catch(() => {
-        console.log('Autoplay prevented, waiting for user interaction.');
-      });
-    }
-  }, []);
+  
+    const playAudio = () => {
+      if (audio) {
+        audio.play().catch((error) => {
+          console.log('Autoplay prevented:', error);
+        });
+      }
+    };
+  
+    document.addEventListener('click', playAudio, { once: true });
+    document.addEventListener('touchstart', playAudio, { once: true });
+  
+    return () => {
+      document.removeEventListener('click', playAudio);
+      document.removeEventListener('touchstart', playAudio);
+    };
+  }, []);  
 
   const playMusic = () => {
     setPlay(!play);
