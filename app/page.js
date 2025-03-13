@@ -27,7 +27,7 @@ export default function Home() {
     const audio = document.getElementById('audio');
     if (audio) {
       // Ensure volume is set
-      // audio.volume = 1;
+      audio.volume = 1;
       audio.play().catch(() => {
         console.log('Autoplay prevented, waiting for user interaction.');
       });
